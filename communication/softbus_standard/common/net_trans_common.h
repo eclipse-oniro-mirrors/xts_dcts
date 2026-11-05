@@ -90,7 +90,7 @@ extern "C" {
 #define WAIT_FAIL_VALUE 0
 #define FILE_PROGRESS_INVALID (-1)
 #define SESSION_ID_MIN 1
-#define MAX_SESSION_NUM 20
+#define MAX_SESSION_NUM 32
 #define BOOL_TRUE 1
 #define BOOL_FALSE 0
 #define OPEN_SESSION_TIMEOUT 19

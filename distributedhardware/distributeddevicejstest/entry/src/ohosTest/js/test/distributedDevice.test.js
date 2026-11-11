@@ -2050,7 +2050,7 @@ export default function distributedDeviceManager() {
                 console.error("SUB_DH_DeviceManager_Dcts_6500 createDeviceManager errCode:" + err.code + ",errMessage:" + err.message);
             }
             console.info("SUB_DH_DeviceManager_Dcts_6500 createDeviceManager success");
-            deviceId = dmInstance.getLocalDeviceId();
+            deviceId = "11111111111111";
             if (!deviceId) {
                 console.log("Dcts_6500 getLocalDeviceId three errCode:" + err.code + ",errMessage:" + err.message);
             }

@@ -142,9 +142,11 @@ export default function AVSessionManagerJsUnit() {
 
             await audioManager.getDevices(audio.DeviceFlag.OUTPUT_DEVICES_FLAG).then((data) => {
                 console.info('get localDevice successfully');
-                localAudioDevice = data;
-                localAudioDevice[0].name = 'name';
-                localAudioDevice[0].address = 'address';
+                if (data.length > 0) {
+                    localAudioDevice = data;
+                    localAudioDevice[0].name = 'name';
+                    localAudioDevice[0].address = 'address';
+                }
             }).catch((err) => {
                 console.info(`Get device BusinessError: ${err.code}, message: ${err.message}`);
                 expect(false).assertTrue();

@@ -19,8 +19,7 @@ import hilog from '@ohos.hilog'
 import Utils from './Util.test';
 import abilityAccessCtrl from '@ohos.abilityAccessCtrl';
 import common from '@ohos.app.ability.common';
-import { Permissions } from 'permissions';
-import { PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
 import { AppStorage } from '@ohos.arkui.stateManagement';
 import abilityDelegatorRegistry from '@ohos.app.ability.abilityDelegatorRegistry';
 import distributedDeviceManager from '@ohos.distributedDeviceManager';

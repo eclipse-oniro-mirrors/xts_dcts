@@ -17,12 +17,11 @@
 import abilityDelegatorRegistry from '@ohos.app.ability.abilityDelegatorRegistry';
 import hilog from '@ohos.hilog'
 import Utils from './Util.test';
-import { Permissions } from 'permissions';
 import { describe, beforeAll, beforeEach, afterEach, afterAll, it, expect, TestType, Size, Level } from "../../../hypium"
 import deviceManager from '@ohos.distributedDeviceManager';
 import continueManager from '@ohos.app.ability.continueManager';
 import util from '@ohos.util';
-import abilityAccessCtrl, { PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import abilityAccessCtrl, { Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
 import { BusinessError, RecordData } from '@ohos.base';
 import common from '@ohos.app.ability.common';
 import { AppStorage } from '@ohos.arkui.stateManagement';

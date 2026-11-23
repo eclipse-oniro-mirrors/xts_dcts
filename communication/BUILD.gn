@@ -21,11 +21,8 @@ group("communication") {
   if (is_standard_system && !dcts_feature_dsoftbus_compile_guard) {
     deps = [
       "dsoftbus/rpc:DctsRpcJsTest",
-      "dsoftbus/rpcserver:DctsRpcJsServer",
       "dsoftbus_request/rpc:DctsRpcRequestJsTest",
-      "dsoftbus_request/rpcserver:DctsRpcRequestJsServer",
       "dsoftbus_rpcets/rpcclient:DctsRpcEtsTest",
-      "dsoftbus_rpcets/rpcserver:DctsRpcEtsServer",
       "rpc_static/RPCTaiheTestStatic:DctsRPCTaiheStaticTest",
       "softbus_standard/dsoftbusTest:Softbustestserver",
       "softbus_standard/socket_trans/client/func:DctsSoftBusSoketTransFuncTest",

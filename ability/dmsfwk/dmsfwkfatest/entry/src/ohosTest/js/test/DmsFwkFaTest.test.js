@@ -1308,6 +1308,7 @@ export default function DmsFwkFaTest() {
         expect().assertFail();
         done();
       }
+      await sleep(2000);
       featureAbility.disconnectAbility(connectId, (err, data) => {
         console.info('SUB_DMS_StandardOs_collaboration_connectAbility_connectRemoteAbility_1900 disconnectAbility err: ' + err.code);
         console.info('SUB_DMS_StandardOs_collaboration_connectAbility_connectRemoteAbility_1900 disconnectAbilityerr: ' + err.message);
@@ -1954,7 +1955,7 @@ export default function DmsFwkFaTest() {
         }
       };
       connectId = featureAbility.connectAbility(request, options);
-      await sleep(1000)
+      await sleep(2000);
       featureAbility.disconnectAbility(connectId, (err) => {
         console.info('SUB_DMS_StandardOs_collaboration_connectAbility_disconnectAbility_0500 disconnectAbility err: ' + err.code);
         expect(err.code).assertEqual(0);

@@ -41,4 +41,8 @@ export class OpenHarmonyTestRunner implements TestRunner {
     Hypium.hypiumTest(abilityDelegator, abilityDelegatorArguments, testsuite);
     hilog.info(0x0000, tag, '%{public}s', 'OpenHarmonyTestRunner onRun end');
   }
+
+  public onStop?: () => void = () => {
+    hilog.info(0x0000, tag, '%{public}s', 'OpenHarmonyTestRunner onStop');
+  }
 }

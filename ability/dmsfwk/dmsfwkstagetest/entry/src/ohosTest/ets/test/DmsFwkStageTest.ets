@@ -317,6 +317,7 @@ export default function DmsFwkStageTest() {
           }
         });
       console.info('SUB_DMS_DistributedExtensionContext_connectServiceExtensionAbility_0200 connectId is: ' + connectId);
+      await sleep(2000);
       try {
         await context.disconnectServiceExtensionAbility(connectId).then(() => {
           console.info('disconnectServiceExtensionAbility success');
